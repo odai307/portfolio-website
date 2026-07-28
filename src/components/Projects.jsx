@@ -6,7 +6,7 @@ export default function Projects() {
     {
       title: 'FantasyDuel GH',
       category: 'Full-Stack FPL Wagering & Gaming SaaS',
-      status: 'Production Ready',
+      status: 'Live Production',
       statusColor: 'bg-emerald-500/10 text-emerald-300 border-emerald-500/20',
       description:
         'A high-concurrency Fantasy Premier League (FPL) peer-to-peer wagering platform featuring real Mobile Money payments, 1v1 head-to-head duels, multi-manager pools, and live Gameweek score sync.',
@@ -17,6 +17,7 @@ export default function Projects() {
       ],
       tech: ['React (Vite)', 'Node.js', 'Express', 'PostgreSQL', 'Prisma ORM', 'Paystack API', 'FPL API', 'TailwindCSS'],
       githubUrl: 'https://github.com/odai307/fantasy-duel',
+      liveUrl: 'https://fantasy-duel-gh.vercel.app',
       isFeatured: true,
     },
     {
