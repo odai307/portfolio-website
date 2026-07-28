@@ -1,4 +1,4 @@
-import { MapPin, ArrowRight, Mail, Code2, Database, Zap, Cpu } from 'lucide-react';
+import { MapPin, ArrowRight, Mail, Code2, Database, Zap, Cpu, FileText, ExternalLink } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from './Icons';
 
 export default function Hero() {
@@ -19,24 +19,24 @@ export default function Hero() {
               <MapPin className="w-3.5 h-3.5 text-indigo-400" />
               <span>Accra, Ghana</span>
               <span className="text-slate-600">•</span>
-              <span className="text-indigo-400 font-semibold">Full-Stack & Backend Systems</span>
+              <span className="text-indigo-400 font-semibold">Full-Stack Software Engineer</span>
             </div>
 
             {/* Main Title */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.15]">
-              Building High-Performance <span className="gradient-text-accent">Backend APIs</span> & AI-Native Applications.
+              Hi, I'm <span className="gradient-text-accent">Gabriel Afotey</span>. Building Production Full-Stack Systems.
             </h1>
 
             {/* Subtitle */}
             <p className="text-slate-400 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">
-              Full-Stack Software Engineer with a deep focus on Node.js microservices, PostgreSQL databases, real-time WebSockets, and modern frontend architecture. Passionate about AI-assisted engineering velocity and clean system design.
+              Full-Stack Software Engineer specializing in Node.js backend architecture, React frontend development, PostgreSQL and MongoDB databases, and real-time WebSocket systems. Proven track record architecting and deploying production web platforms.
             </p>
 
             {/* Feature Badges */}
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3 pt-2">
               <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 text-xs font-medium">
                 <Database className="w-3.5 h-3.5 text-indigo-400" />
-                PostgreSQL & Prisma
+                PostgreSQL & MongoDB
               </div>
               <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-cyan-500/10 border border-cyan-500/20 text-cyan-300 text-xs font-medium">
                 <Zap className="w-3.5 h-3.5 text-cyan-400" />
@@ -44,7 +44,7 @@ export default function Hero() {
               </div>
               <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-300 text-xs font-medium">
                 <Cpu className="w-3.5 h-3.5 text-emerald-400" />
-                AI-Native Development
+                Paystack Payment Gateway
               </div>
             </div>
 
@@ -58,10 +58,14 @@ export default function Hero() {
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </a>
               <a
-                href="#contact"
-                className="w-full sm:w-auto px-7 py-3.5 rounded-full bg-slate-900 border border-slate-800 text-slate-200 font-semibold text-sm hover:bg-slate-800 transition-colors flex items-center justify-center gap-2"
+                href={`${import.meta.env.BASE_URL}Gabriel_Afotey_CV.pdf`}
+                target="_blank"
+                rel="noreferrer"
+                className="w-full sm:w-auto px-7 py-3.5 rounded-full bg-slate-900 border border-slate-800 text-slate-200 font-semibold text-sm hover:bg-slate-800 hover:text-white transition-colors flex items-center justify-center gap-2"
               >
-                Let's Talk
+                <FileText className="w-4 h-4 text-indigo-400" />
+                <span>View Resume</span>
+                <ExternalLink className="w-3.5 h-3.5 opacity-60" />
               </a>
             </div>
 
@@ -121,10 +125,10 @@ export default function Hero() {
                   <span className="text-purple-400">const</span> <span className="text-amber-300">engineer</span> = {'{'}
                 </div>
                 <div className="pl-4">
-                  <span className="text-cyan-300">name</span>: <span className="text-emerald-300">'Software Engineer'</span>,
+                  <span className="text-cyan-300">name</span>: <span className="text-emerald-300">'Gabriel Afotey'</span>,
                 </div>
                 <div className="pl-4">
-                  <span className="text-cyan-300">role</span>: <span className="text-emerald-300">'Full-Stack & Backend Systems'</span>,
+                  <span className="text-cyan-300">role</span>: <span className="text-emerald-300">'Full-Stack Software Engineer'</span>,
                 </div>
                 <div className="pl-4">
                   <span className="text-cyan-300">location</span>: <span className="text-emerald-300">'Accra, Ghana'</span>,
@@ -133,17 +137,10 @@ export default function Hero() {
                   <span className="text-cyan-300">coreStack</span>: [
                 </div>
                 <div className="pl-8 text-indigo-300">
-                  'Node.js', 'Express', 'TypeScript', 'PostgreSQL',
+                  'Node.js', 'Express', 'PostgreSQL', 'MongoDB',
                 </div>
                 <div className="pl-8 text-indigo-300">
-                  'Prisma ORM', 'Socket.io', 'React', 'Cloudinary'
-                </div>
-                <div className="pl-4">],</div>
-                <div className="pl-4">
-                  <span className="text-cyan-300">aiWorkflow</span>: [
-                </div>
-                <div className="pl-8 text-emerald-300">
-                  'Cursor Ultra', 'Claude Code', 'Gemini AI APIs'
+                  'Prisma ORM', 'Socket.io', 'React', 'Paystack'
                 </div>
                 <div className="pl-4">],</div>
                 <div className="pl-4">

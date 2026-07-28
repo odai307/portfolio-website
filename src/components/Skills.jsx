@@ -1,20 +1,18 @@
-import { Cpu, Database, Layout, Cloud, Sparkles, CheckCircle } from 'lucide-react';
+import { Cpu, Database, Layout, Cloud, CheckCircle } from 'lucide-react';
 
 export default function Skills() {
   const skillCategories = [
     {
-      title: 'Backend & Systems Engineering',
+      title: 'Backend Engineering',
       icon: Database,
       badgeColor: 'text-indigo-400 bg-indigo-500/10 border-indigo-500/20',
       skills: [
         'Node.js & Express',
         'PostgreSQL & SQL',
+        'MongoDB',
         'Prisma ORM',
         'Socket.io (WebSockets)',
         'RESTful API Design',
-        'Role-Based Auth (JWT)',
-        'Database Schema Migrations',
-        'Middleware Architecture',
       ],
     },
     {
@@ -27,7 +25,6 @@ export default function Skills() {
         'TypeScript',
         'Vite',
         'Tailwind CSS / Vanilla CSS',
-        'Single Page Applications (SPA)',
         'State Management & Hooks',
         'Responsive UI/UX Design',
       ],
@@ -43,21 +40,6 @@ export default function Skills() {
         'Cloudinary Storage API',
         'Git & GitHub Workflows',
         'Postman API Testing',
-        'CORS & Security Best Practices',
-        'Environment Secret Auditing',
-      ],
-    },
-    {
-      title: 'AI-Native Development & Velocity',
-      icon: Sparkles,
-      badgeColor: 'text-amber-400 bg-amber-500/10 border-amber-500/20',
-      skills: [
-        'Cursor Ultra & Claude Code',
-        'OpenAI & Gemini API Integration',
-        'AI-Assisted Code Refactoring',
-        'Rapid Feature Prototyping',
-        'Disciplined Code Review',
-        'Technical Documentation',
       ],
     },
   ];
@@ -76,12 +58,12 @@ export default function Skills() {
             Core Engineering Stack & Skills
           </h2>
           <p className="text-slate-400 text-base max-w-2xl mt-3">
-            A comprehensive overview of my technical toolset across backend systems, database architecture, frontend frameworks, and AI workflows.
+            Full-Stack Engineer specializing in scalable backend services, database design, real-time WebSockets, and modern web applications.
           </p>
         </div>
 
-        {/* Skill Category Cards */}
-        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        {/* Skill Category Cards Grid */}
+        <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {skillCategories.map((cat, idx) => {
             const Icon = cat.icon;
             return (
@@ -98,7 +80,7 @@ export default function Skills() {
                   </div>
                 </div>
 
-                <div className="grid grid-cols-2 gap-3">
+                <div className="grid grid-cols-1 gap-2.5">
                   {cat.skills.map((skill) => (
                     <div
                       key={skill}

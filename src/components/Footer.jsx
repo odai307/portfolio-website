@@ -12,8 +12,8 @@ export default function Footer() {
             G
           </div>
           <div>
-            <div className="text-white font-medium text-sm">Full-Stack Software Engineer</div>
-            <div className="text-slate-500 text-[11px]">Accra, Ghana • Remote</div>
+            <div className="text-white font-medium text-sm">Gabriel Afotey</div>
+            <div className="text-slate-500 text-[11px]">Full-Stack Software Engineer • Accra, Ghana</div>
           </div>
         </div>
 

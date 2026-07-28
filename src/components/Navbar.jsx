@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Terminal, Code2, Briefcase, Cpu, Mail, FileText, Menu, X } from 'lucide-react';
+import { Terminal, Code2, Briefcase, Cpu, Mail, FileText, Menu, X, ExternalLink } from 'lucide-react';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -39,11 +39,11 @@ export default function Navbar() {
           </div>
           <div className="flex flex-col">
             <span className="font-bold text-base tracking-tight text-white group-hover:text-indigo-400 transition-colors">
-              Software Engineer
+              Gabriel Afotey
             </span>
-            <span className="text-[11px] font-mono text-emerald-400 flex items-center gap-1.5">
-              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
-              Available for Hire
+            <span className="text-[11px] font-mono text-slate-400 flex items-center gap-1.5">
+              Full-Stack Software Engineer
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
             </span>
           </div>
         </a>
@@ -65,11 +65,21 @@ export default function Navbar() {
           })}
         </nav>
 
-        {/* Right CTA */}
+        {/* Right CTA Links */}
         <div className="hidden md:flex items-center gap-3">
           <a
+            href={`${import.meta.env.BASE_URL}Gabriel_Afotey_CV.pdf`}
+            target="_blank"
+            rel="noreferrer"
+            className="px-4 py-2.5 rounded-full bg-slate-900 border border-slate-800 text-slate-200 hover:text-white hover:border-slate-700 font-medium text-xs flex items-center gap-1.5 transition-colors"
+          >
+            <FileText className="w-3.5 h-3.5 text-indigo-400" />
+            <span>View Resume</span>
+            <ExternalLink className="w-3 h-3 opacity-60" />
+          </a>
+          <a
             href="#contact"
-            className="px-5 py-2.5 rounded-full bg-gradient-to-r from-indigo-500 to-cyan-500 text-white font-medium text-sm hover:opacity-95 transition-opacity shadow-lg shadow-indigo-500/25 flex items-center gap-2"
+            className="px-5 py-2.5 rounded-full bg-gradient-to-r from-indigo-500 to-cyan-500 text-white font-medium text-xs hover:opacity-95 transition-opacity shadow-lg shadow-indigo-500/25 flex items-center gap-2"
           >
             Get In Touch
           </a>
@@ -101,7 +111,17 @@ export default function Navbar() {
               </a>
             );
           })}
-          <div className="pt-2">
+          <div className="pt-2 space-y-2">
+            <a
+              href={`${import.meta.env.BASE_URL}Gabriel_Afotey_CV.pdf`}
+              target="_blank"
+              rel="noreferrer"
+              onClick={() => setMobileMenuOpen(false)}
+              className="w-full py-3 rounded-xl bg-slate-900 border border-slate-800 text-slate-200 font-medium text-center flex items-center justify-center gap-2"
+            >
+              <FileText className="w-4 h-4 text-indigo-400" />
+              <span>View Resume</span>
+            </a>
             <a
               href="#contact"
               onClick={() => setMobileMenuOpen(false)}
