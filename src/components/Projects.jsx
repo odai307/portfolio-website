@@ -37,6 +37,22 @@ export default function Projects() {
       liveUrl: 'https://thesis-flow-self.vercel.app/login',
       isFeatured: true,
     },
+    {
+      title: 'TutorConnect',
+      category: 'MERN Stack Tutoring & Peer Mentorship Platform',
+      status: 'Full-Stack Application',
+      statusColor: 'bg-indigo-500/10 text-indigo-300 border-indigo-500/20',
+      description:
+        'A full-stack educational marketplace connecting students with verified academic tutors for subject-based session scheduling, direct messaging, and review ratings.',
+      features: [
+        'MongoDB Mongoose models for subjects, bookings, direct messages, & reviews',
+        'JWT Authentication & Express-Validator request sanitization',
+        'Admin Management Portal for platform statistics, user management, & booking moderation',
+      ],
+      tech: ['React (Vite)', 'Node.js', 'Express', 'MongoDB', 'Mongoose', 'TailwindCSS', 'JWT Auth'],
+      githubUrl: 'https://github.com/odai307/tutor-connect',
+      isFeatured: true,
+    },
   ];
 
   return (
@@ -61,7 +77,7 @@ export default function Projects() {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {projects.map((proj, i) => (
             <div
               key={i}
