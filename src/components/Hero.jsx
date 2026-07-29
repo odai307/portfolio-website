@@ -15,11 +15,11 @@ export default function Hero() {
           <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
             
             {/* Status & Location Pill */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/80 border border-slate-800 text-slate-300 text-xs font-mono">
-              <MapPin className="w-3.5 h-3.5 text-indigo-400" />
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#061411] border border-emerald-500/25 text-slate-300 text-xs font-mono">
+              <MapPin className="w-3.5 h-3.5 text-emerald-400" />
               <span>Accra, Ghana</span>
               <span className="text-slate-600">•</span>
-              <span className="text-indigo-400 font-semibold">Full-Stack Software Engineer</span>
+              <span className="text-emerald-400 font-semibold">Full-Stack Software Engineer</span>
             </div>
 
             {/* Main Title */}
@@ -34,16 +34,16 @@ export default function Hero() {
 
             {/* Feature Badges */}
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3 pt-2">
-              <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 text-xs font-medium">
-                <Database className="w-3.5 h-3.5 text-indigo-400" />
+              <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-emerald-500/10 border border-emerald-500/25 text-emerald-300 text-xs font-medium">
+                <Database className="w-3.5 h-3.5 text-emerald-400" />
                 PostgreSQL & MongoDB
               </div>
-              <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-cyan-500/10 border border-cyan-500/20 text-cyan-300 text-xs font-medium">
-                <Zap className="w-3.5 h-3.5 text-cyan-400" />
+              <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-amber-500/10 border border-amber-500/25 text-amber-300 text-xs font-medium">
+                <Zap className="w-3.5 h-3.5 text-amber-400" />
                 Real-Time WebSockets
               </div>
-              <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-300 text-xs font-medium">
-                <Cpu className="w-3.5 h-3.5 text-emerald-400" />
+              <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-teal-500/10 border border-teal-500/25 text-teal-300 text-xs font-medium">
+                <Cpu className="w-3.5 h-3.5 text-teal-400" />
                 Paystack Payment Gateway
               </div>
             </div>
@@ -52,7 +52,7 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
               <a
                 href="#experience"
-                className="w-full sm:w-auto px-7 py-3.5 rounded-full bg-gradient-to-r from-indigo-600 to-cyan-500 text-white font-semibold text-sm hover:opacity-95 transition-all shadow-lg shadow-indigo-500/25 flex items-center justify-center gap-2 group"
+                className="w-full sm:w-auto px-7 py-3.5 rounded-full bg-gradient-to-r from-emerald-500 to-teal-500 text-slate-950 font-bold text-sm hover:opacity-95 transition-all shadow-lg shadow-emerald-500/20 flex items-center justify-center gap-2 group"
               >
                 View Experience & Projects
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -61,9 +61,9 @@ export default function Hero() {
                 href={`${import.meta.env.BASE_URL}Gabriel_Afotey_CV.pdf`}
                 target="_blank"
                 rel="noreferrer"
-                className="w-full sm:w-auto px-7 py-3.5 rounded-full bg-slate-900 border border-slate-800 text-slate-200 font-semibold text-sm hover:bg-slate-800 hover:text-white transition-colors flex items-center justify-center gap-2"
+                className="w-full sm:w-auto px-7 py-3.5 rounded-full bg-[#091a16] border border-emerald-500/25 text-slate-200 font-semibold text-sm hover:bg-[#0c241e] hover:text-white transition-colors flex items-center justify-center gap-2"
               >
-                <FileText className="w-4 h-4 text-indigo-400" />
+                <FileText className="w-4 h-4 text-emerald-400" />
                 <span>View Resume</span>
                 <ExternalLink className="w-3.5 h-3.5 opacity-60" />
               </a>
@@ -76,7 +76,7 @@ export default function Hero() {
                 href="https://github.com/odai307"
                 target="_blank"
                 rel="noreferrer"
-                className="p-2 rounded-lg bg-slate-900/60 border border-slate-800 hover:text-white hover:border-slate-700 transition-colors"
+                className="p-2 rounded-lg bg-[#091a16] border border-emerald-500/25 hover:text-white hover:border-emerald-500/50 transition-colors"
                 aria-label="GitHub Profile"
               >
                 <GithubIcon className="w-4 h-4" />
@@ -85,14 +85,14 @@ export default function Hero() {
                 href="https://www.linkedin.com/in/gabriel-afotey/"
                 target="_blank"
                 rel="noreferrer"
-                className="p-2 rounded-lg bg-slate-900/60 border border-slate-800 hover:text-white hover:border-slate-700 transition-colors"
+                className="p-2 rounded-lg bg-[#091a16] border border-emerald-500/25 hover:text-white hover:border-emerald-500/50 transition-colors"
                 aria-label="LinkedIn Profile"
               >
                 <LinkedinIcon className="w-4 h-4" />
               </a>
               <a
                 href="mailto:gabrielafotey@gmail.com"
-                className="p-2 rounded-lg bg-slate-900/60 border border-slate-800 hover:text-white hover:border-slate-700 transition-colors"
+                className="p-2 rounded-lg bg-[#091a16] border border-emerald-500/25 hover:text-white hover:border-emerald-500/50 transition-colors"
                 aria-label="Email Me"
               >
                 <Mail className="w-4 h-4" />
@@ -102,53 +102,53 @@ export default function Hero() {
 
           {/* Right Interactive Code Terminal Preview */}
           <div className="lg:col-span-5">
-            <div className="glass-panel rounded-2xl overflow-hidden shadow-2xl border border-white/10 relative group">
+            <div className="glass-panel rounded-2xl overflow-hidden shadow-2xl border border-emerald-500/20 relative group">
               
               {/* Terminal Window Header */}
-              <div className="bg-[#0f172a] px-4 py-3 border-b border-slate-800 flex items-center justify-between">
+              <div className="bg-[#071714] px-4 py-3 border-b border-emerald-500/20 flex items-center justify-between">
                 <div className="flex items-center gap-2">
                   <div className="w-3 h-3 rounded-full bg-rose-500/80"></div>
                   <div className="w-3 h-3 rounded-full bg-amber-500/80"></div>
                   <div className="w-3 h-3 rounded-full bg-emerald-500/80"></div>
                 </div>
                 <div className="text-xs font-mono text-slate-400 flex items-center gap-1.5">
-                  <Code2 className="w-3.5 h-3.5 text-indigo-400" />
+                  <Code2 className="w-3.5 h-3.5 text-emerald-400" />
                   engineer.config.ts
                 </div>
                 <div className="w-12"></div>
               </div>
 
               {/* Terminal Body */}
-              <div className="p-5 font-mono text-xs leading-relaxed space-y-3 bg-[#070a12]/90 text-slate-300">
+              <div className="p-5 font-mono text-xs leading-relaxed space-y-3 bg-[#030d0a]/95 text-slate-300">
                 <div className="text-slate-500">// Candidate Profile Overview</div>
                 <div>
-                  <span className="text-purple-400">const</span> <span className="text-amber-300">engineer</span> = {'{'}
+                  <span className="text-teal-400">const</span> <span className="text-amber-300">engineer</span> = {'{'}
                 </div>
                 <div className="pl-4">
-                  <span className="text-cyan-300">name</span>: <span className="text-emerald-300">'Gabriel Afotey'</span>,
+                  <span className="text-emerald-300">name</span>: <span className="text-emerald-400">'Gabriel Afotey'</span>,
                 </div>
                 <div className="pl-4">
-                  <span className="text-cyan-300">role</span>: <span className="text-emerald-300">'Full-Stack Software Engineer'</span>,
+                  <span className="text-emerald-300">role</span>: <span className="text-emerald-400">'Full-Stack Software Engineer'</span>,
                 </div>
                 <div className="pl-4">
-                  <span className="text-cyan-300">location</span>: <span className="text-emerald-300">'Accra, Ghana'</span>,
+                  <span className="text-emerald-300">location</span>: <span className="text-emerald-400">'Accra, Ghana'</span>,
                 </div>
                 <div className="pl-4">
-                  <span className="text-cyan-300">coreStack</span>: [
+                  <span className="text-emerald-300">coreStack</span>: [
                 </div>
-                <div className="pl-8 text-indigo-300">
+                <div className="pl-8 text-amber-300">
                   'Node.js', 'Express', 'PostgreSQL', 'MongoDB',
                 </div>
-                <div className="pl-8 text-indigo-300">
+                <div className="pl-8 text-amber-300">
                   'Prisma ORM', 'Socket.io', 'React', 'Paystack'
                 </div>
                 <div className="pl-4">],</div>
                 <div className="pl-4">
-                  <span className="text-cyan-300">status</span>: <span className="text-emerald-400">'Ready for Impact 🚀'</span>
+                  <span className="text-emerald-300">status</span>: <span className="text-amber-400">'Ready for Impact 🚀'</span>
                 </div>
                 <div>{'}'};</div>
 
-                <div className="pt-2 border-t border-slate-800/80 text-slate-400 flex items-center justify-between text-[11px]">
+                <div className="pt-2 border-t border-emerald-500/20 text-slate-400 flex items-center justify-between text-[11px]">
                   <span className="text-emerald-400">✓ System Status: All Services Operational</span>
                   <span className="text-slate-500">v2.4.0</span>
                 </div>
