@@ -21,23 +21,6 @@ export default function Projects() {
       isFeatured: true,
     },
     {
-      title: 'ThesisFlow SaaS',
-      category: 'Academic Workflow & Document Review Platform',
-      status: 'Live Production',
-      statusColor: 'bg-emerald-500/15 text-emerald-300 border-emerald-500/30',
-      description:
-        'Production SaaS application enabling university students, academic supervisors, and department coordinators to manage thesis submissions, conduct line-by-line feedback, and track review lifecycles.',
-      features: [
-        'Role-Based Access Control (Student, Supervisor, Coordinator)',
-        'Socket.io WebSockets for instant live feedback & notifications',
-        'Cloudinary cloud storage pipeline & Google Docs iframe viewer',
-      ],
-      tech: ['Node.js', 'Express', 'PostgreSQL', 'Prisma', 'Socket.io', 'Cloudinary', 'Vercel', 'Render'],
-      githubUrl: 'https://github.com/odai307/thesis-flow.git',
-      liveUrl: 'https://thesis-flow-self.vercel.app/login',
-      isFeatured: true,
-    },
-    {
       title: 'TutorConnect',
       category: 'Full-Stack Tutoring & Peer Mentorship Platform',
       status: 'Live Production',
@@ -70,7 +53,7 @@ export default function Projects() {
             <span>Featured Software Engineering</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">
-            Personal & Production Projects
+            Featured Full-Stack Projects
           </h2>
           <p className="text-slate-400 text-base max-w-2xl mt-3">
             Highlighting systems with complex business logic, real-time concurrency, and clean architectural design.
@@ -78,7 +61,7 @@ export default function Projects() {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {projects.map((proj, i) => (
             <div
               key={i}
