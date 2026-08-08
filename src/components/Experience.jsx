@@ -10,7 +10,7 @@ export default function Experience() {
       location: 'Accra, Ghana (Remote)',
       description:
         'Architected and deployed a multi-tenant academic workflow and review management platform designed for universities to streamline thesis submissions, supervisory feedback, and department coordination.',
-      liveUrl: 'https://thesis-flow.vercel.app',
+      liveUrl: 'https://thesis-flow-self.vercel.app/',
       githubUrl: 'https://github.com/odai307/thesis-flow.git',
       highlights: [
         {
